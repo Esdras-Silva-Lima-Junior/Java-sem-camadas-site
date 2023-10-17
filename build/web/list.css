@@ -25,12 +25,15 @@ table, th, td, input{
     background-color: darkgray;
 }
 
-table tr td.excluir{
+table tr td.excluir,
+td.alterar{
     background: darkgray;
     color: black;
 }
 
-table th.excluir, td.excluir{
+table th.excluir,
+td.excluir,
+td.alterar{
     border: none;
 }
 

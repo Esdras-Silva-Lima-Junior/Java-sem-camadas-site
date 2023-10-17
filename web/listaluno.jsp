@@ -1,4 +1,3 @@
-<%@page import="org.apache.tomcat.dbcp.dbcp2.SQLExceptionList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.DriverManager"%>
@@ -53,7 +52,11 @@
                     <th>CURSO</th>
                     <th class="excluir"></th>
                 </tr>
-
+                
+                
+                
+                
+                
                 <%
                     while (result.next()){
                 %>
@@ -65,8 +68,14 @@
                         <td> <% out.print(result.getString("telefone")); %> </td>
                         <td> <% out.print(result.getString("email")); %> </td>
                         <td> <% out.print(result.getString("nome_curso")); %> </td>
+                        <td class="alterar">
+                            <form method="post" action="alterardados.jsp">
+                                  <input type="hidden" name="alt" value="<%= result.getString("id") %>">
+                                  <input type="submit" value="Alterar">
+                            </form>
+                        </td>
                         <td class="excluir">
-                            <form method="get" action="excdados.jsp">
+                            <form method="post" action="excdados.jsp">
                                   <input type="hidden" name="id" value="<%= result.getString("id") %>">
                                   <input type="submit" value="Excluir">
                             </form>
