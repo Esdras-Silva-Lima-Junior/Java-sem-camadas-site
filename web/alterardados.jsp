@@ -8,43 +8,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="altstyle.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-        <style>
-            *{
-                margin: 0 auto;
-                padding: 10px;
-                color: black;
-                font-size: 16px;
-                font-family: 'Roboto', sans-serif;
-                
-            }
-            
-            .cima,
-            .meio{
-                display: flex
-            }
-            
-            .cima-dir,
-            .cima-esq{
-                flex: 1
-            }
-            
-            .meio-dir,
-            .meio-esq{
-                flex: 1
-            }
-            
-            .baixo{
-                text-align: center
-            }
-            
-            .baixo input{
-                margin-top: 80px;
-                cursor: pointer
-            }
-        </style>
     </head>
     <body>
         <%

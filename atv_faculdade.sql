@@ -12,11 +12,9 @@ CREATE TABLE alunos (
     FOREIGN KEY (id_curso) REFERENCES cursos(id_curso)
 );
 
-SELECT a.id, a.cpf, a.nome, a.telefone, a.email, a.nome_curso FROM alunos a;
+INSERT INTO alunos(nome, email) VALUES('Maria', "aaaaaaae@gggg");
 
-SELECT * FROM cursos;
+SELECT * FROM alunos WHERE nome = 'Esdras';
+
 SELECT * FROM alunos;
-SELECT c.id_curso FROM cursos c;
-DROP TABLE alunos;
-DROP TABLE cursos;
 
