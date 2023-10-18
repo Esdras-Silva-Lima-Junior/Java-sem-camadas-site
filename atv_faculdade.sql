@@ -11,10 +11,3 @@ CREATE TABLE alunos (
     nome_curso VARCHAR(25) NOT NULL,
     FOREIGN KEY (id_curso) REFERENCES cursos(id_curso)
 );
-
-INSERT INTO alunos(nome, email) VALUES('Maria', "aaaaaaae@gggg");
-
-SELECT * FROM alunos WHERE nome = 'Esdras';
-
-SELECT * FROM alunos;
-
