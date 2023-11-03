@@ -36,7 +36,8 @@
 
             if (result.next()) {
         %>
-        <div>    
+        <div>
+            <h1 class="title"> Alteração de dados </h1>
             <form method="post" action="update.jsp">
                 <div class="cima">
                     <div class="cima-esq">
